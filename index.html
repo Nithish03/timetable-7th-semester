@@ -1,15 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Timetable | 7th semester</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+    </style>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Class Schedule</title>
+
+    
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+        body {
+            background: #fcf8ec;
+            overflow: hidden;
+        }
+
+        .Heading {
+            font-weight: 500;
+            color: #456268;
+            width: 100%;
+            padding-top: 1%;
+            margin-left: 4%;
+            font-size: 1em;
+            
+        }
+        .table {
+            padding-top: 2%;
+            margin-left: 4%;
+        }
+        .main {
+            border-collapse: collapse;
+            text-align: left;
+            width: 90vw;
+            font-weight: 300;
+            font-size: 1.2em;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.18);
+        }
+        .header {
+            font-size: 1.2em;
+            font-weight: 500;
+            background: #456268;
+        }
+
+        td {
+            padding: 2%;
+            color: #d0e8f2;
+            border-bottom: .001em solid #d0e8f2;
+        }
+
+        td a {
+            color: #456268;
+            font-weight: 400;
+            padding: 0;
+            height: 100%;
+            text-decoration: none;
+            display: block;
+        }
+        .cell {
+            cursor: pointer;
+        }
+        .cell:hover {
+            background: lightgrey;
+            transition: 1s;
+            color: blanchedalmond;            
+        }
+        .days {
+            color: #456268;
+            font-weight: 400;
+        }
+
+    </style>
+
 </head>
 <body>
-    <h1>IV CSE - B | Timetable</h1>
-    <p>Table</p>
+    <div class="Heading">
+        <h1>IV CSE - B | Timetable</h1>
+    </div>
+    <div class="table">
+        <table class="main">
+            <tr class="header">
+                <td></td>
+                <td>Hour 1</td>
+                <td>Hour 2</td>
+                <td>Hour 3</td>
+                <td>Hour 4</td>
+            </tr>
+
+            <tr>
+                <td class="days">Day 1</td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">AI</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">TOC</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">MP</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">DS</a></td>
+            </tr>
+            
+            <tr>
+                <td class="days">Day 2</td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">MP</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">OOAD</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">DS</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">DCN</a></td>
+            </tr>
+
+            <tr>
+                <td class="days">Day 3</td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">AI</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">DS</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">OOAD</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">TOC</a></td>
+            </tr>
+
+            <tr>
+                <td class="days">Day 4</td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">TOC</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">DCN</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">MP</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">AI</a></td>
+            </tr>
+
+            <tr>
+                <td class="days">Day 5</td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">OOAD</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">AI</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">TOC</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">DCN</a></td>
+            </tr>
+
+            <tr>
+                <td class="days">Day 6</td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">OOAD</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">AI</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">TOC</a></td>
+                <td class="cell"><a target="_blank" href="https://meet.google.com/pcj-bzas-wrw">DCN</a></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
